@@ -71,7 +71,7 @@
     </section>
 
     <!-- Services Section-->
-     <section id="services" class="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="section-header">
                 <h2>Serviços Especializados</h2>
@@ -108,10 +108,159 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
-     
+    <!-- Portfolio Section-->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meu Portfólio</h2>
+                <p>Conheça alguns projetos que desenvolvi para meus clientes</p>
+            </div>
 
+            <!-- Portfólio Filter -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="medical">Médicos</button>
+                <button class="filter-btn" data-filter="legal">Advogados</button>
+                <button class="filter-btn" data-filter="business">Empresas</button>
+            </div>
+
+            <!-- Portfolio Grid-->
+            <div class="portfolio-grid">
+                <!-- E-commerce Projects -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="/images/projects/ecommerce-1.jpg" alt="Loja Virtual - Moda Feminica">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Loja Virtual - Moda Feminina</h3>
+                                <p>E-commerce completo com carrinho de compras e pagamento online</p>
+                                <div class="portfolio-links">
+                                    <a href="https://exemplo-loja-moda.com" target="_blank" class="btn btn-small">Ver
+                                        Site</a>
+                                    <button class="btn btn-small btn-secondary"
+                                        onclick="openModal(\'modal-ecommerce-1\' )">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="/images/projects/ecommerce-2.jpg" alt="Loja de Eletrônicos">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Loja de Eletrônicos</h3>
+                                <p>Plataforma de vendas com comparador de preços e avaliações</p>
+                                <div class="portfolio-links">
+                                    <a href="https://exemplo-eletronicos.com" target="_blank" class="btn btn-small">Ver
+                                        Site</a>
+                                    <button class="btn btn-small btn-secondary"
+                                        onclick="openModal(\'modal-ecommerce-2\' )">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Projects -->
+                <div class="portfolio-item" data-category="medical">
+                    <div class="portfolio-image">
+                        <img src="/images/projects/medical-1.jpg" alt="Clínica Odontológica">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Clínica Odontológica</h3>
+                                <p>Site com agendamento online e informações sobre tratamentos</p>
+                                <div class="portfolio-links">
+                                    <a href="https://exemplo-clinica-odonto.com" target="_blank"
+                                        class="btn btn-small">Ver Site</a>
+                                    <button class="btn btn-small btn-secondary"
+                                        onclick="openModal(\'modal-medical-1\' )">Detalhes></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="medical">
+                    <div class="portfolio-image">
+                        <img src="/images/projects/medical-2.jpg" alt="Consultório Médico">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Consultório Médico</h3>
+                                <p>Portal do paciente com histórico médico e consultas</p>
+                                <div class="portfolio-links">
+                                    <a href="https://exemplo-consultorio.com" target="_blank" class="btn btn-small">Ver
+                                        Site</a>
+                                    <button class="btn btn-small btn-secondary"
+                                        onclick="openModal(\'modal-medical-2\' )">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal Projects -->
+                <div class="portfolio-item" data-category="legal">
+                    <div class="portfolio-image">
+                        <img src="/images/projects/legal-1.jpg" alt="Escritório de Advocacia">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Escritório de Advocacia</h3>
+                                <p>Site institucional com áreas de atuação e contato</p>
+                                <div class="portfolio-links">
+                                    <a href="https://exemplo-advocacia.com" target="_blank" class="btn btn-small">Ver
+                                        Site</a>
+                                    <button class="btn btn-small btn-secondary"
+                                        onclick="openModal(\'modal-legal-1\' )">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Projects -->
+                <div class="portfolio-item" data-category="business">
+                    <div class="portfolio-image">
+                        <img src="/images/projects/business-1.jpg" alt="Empresa de Consultoria">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Empresa de Consultoria</h3>
+                                <p>Site corporativo com blog e área de clientes</p>
+                                <div class="portfolio-links">
+                                    <a href="https://exemplo-consultoria.com" target="_blank" class="btn btn-small">Ver
+                                        Site</a>
+                                    <button class="btn btn-small btn-secondary"
+                                        onclick="openModal(\'modal-business-1\' )">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="business">
+                    <div class="portfolio-image">
+                        <img src="/images/projects/business-2.jpg" alt="Agência de Marketing">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Agência de Marketin</h3>
+                                <p>Portal com portfólio de casos de sucesso e serviços</p>
+                                <div class="portfolio-links">
+                                    <a href="https://exemplo-agencia.com" target="_blank" class="btn btn-small">Ver Site</a>
+                                    <button class="btn btn-small btn-secondary" onclick="openModal(\'modal-business-2\' )">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 </body>
 
 </html>
